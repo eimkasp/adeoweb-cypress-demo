@@ -31,6 +31,12 @@ We will 👀 live-code a demo following this plan:
 * `npx cypress open` / `yarn run cypress open`
 * `npm install cypress-plugin-screenshot`
 
+# Cypress Lighthouse Testing
+To Setup  `npm i -D cypress @cypress-audit/lighthouse`
+
+# TODO:
+Cypress Dashboard Integration - https://dashboard.cypress.io/
+CI/CD Integration - https://docs.cypress.io/guides/guides/integration-and-e2e-testing.html
 
 
 # Usefull links
