@@ -1,19 +1,51 @@
-var base_url = 'https://adeoweb.biz/';
+const base_url = 'https://adeoweb.biz/';
 
-describe('example to-do app', () => {
+
+// Just describe your website
+describe('adeoweb.biz', () => {
     beforeEach(() => {
-        // Cypress starts out with a blank slate for each test
-        // so we must tell it to visit our website with the `cy.visit()` command.
-        // Since we want to visit the same URL at the start of all our tests,
-        // we include it in our beforeEach function so that it runs before each test
         cy.visit(base_url);
-
     });
 
-    it('Visit homepage it should have correct title', () => {
-        // We use the `cy.title()` command to get the title of the current page.
-        // Then, we use `should` to assert that the title is correct.
+    it('should have a title', () => {
         cy.title().should('include', 'Adeo Web');
     });
+
+    it('clicking get in touch button in the header, should take me to the contact form and show validatio error', () => {
+        cy.get('.d-none.d-lg-block .aw-menu-shout-item').click();
+
+        cy.get('[name="footer_contact[name]"]').should('be.visible');
+        cy.get('[name="footer_contact[name]"]').type('eimantas@kasperiunas.com')
+    
+        cy.get('[name="footer_contact[email]"]').should('be.visible');
+        cy.get('[name="footer_contact[email]"]').type('eimantas@kasperiunas.com')
+        
+        
+        cy.get('[name="footer_contact[message]"]').type('eimantas@kasperiunas.com')
+        cy.get('[name="footer_contact[submit]"]').click();
+
+        cy.get('.invalid-tooltip').should('be.visible');
+
+    });
+
+    it('clicking get in touch button in the header, should take me to the contact form and show success message', () => {
+        cy.get('.d-none.d-lg-block .aw-menu-shout-item').click();
+
+        cy.get('[name="footer_contact[name]"]').should('be.visible');
+        cy.get('[name="footer_contact[name]"]').type('Eimantas Kasperiunas')
+    
+        cy.get('[name="footer_contact[email]"]').should('be.visible');
+        cy.get('[name="footer_contact[email]"]').type('eimantas@kasperiunas.com')
+        
+        
+        cy.get('[name="footer_contact[message]"]').type('eimantas@kasperiunas.com')
+        cy.get('.privacy-policy-label').click();
+        cy.get('[name="footer_contact[submit]"]').click();
+
+        cy.get('#footer-boltforms-message-success').should('be.visible');
+
+
+    });
+
 
 });
