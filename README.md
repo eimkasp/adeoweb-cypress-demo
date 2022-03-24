@@ -29,7 +29,6 @@ We will 👀 live-code a demo following this plan:
 # Used Commands
 * `npm install cypress` / `yarn add cypress`
 * `npx cypress open` / `yarn run cypress open`
-* `npm install cypress-plugin-screenshot`
 
 # Cypress Lighthouse Testing
 To Setup  `npm i -D cypress @cypress-audit/lighthouse`
@@ -43,3 +42,6 @@ CI/CD Integration - https://docs.cypress.io/guides/guides/integration-and-e2e-te
 
 * https://www.cypress.io/
 * https://github.com/laracasts/cypress
+
+# Cypress Dashboard
+https://dashboard.cypress.io/projects/2xqgvz/runs/1/test-results/3a31a62d-a970-4820-9e81-d249295be59f
