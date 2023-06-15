@@ -1,0 +1,14 @@
+{
+  "entity": "individual",
+  "firstname": "Bachana",
+  "lastname": "Sagi",
+  "email": "bachanasag@gmail.com",
+  "phonenumber": "1 323 552 7627",
+  "country": "United States",
+  "state": "CALIFORNIA",
+  "city": "Los Angeles",
+  "line": "2315 BARLOW ST",
+  "postalcode": "123123",
+  "password": "Password123!@#",
+  "passwordconfirm": "Password123!@#"
+}
