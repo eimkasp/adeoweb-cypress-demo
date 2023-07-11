@@ -1,0 +1,20 @@
+{
+  "entity": "company",
+  "firstname": "Eimantas",
+  "lastname": "Kasperiūnas",
+  "email": "team@eim.solutions",
+  "phonenumber": "99 444 765 24",
+  "country": "Lithuania",
+  "city": "Kaunas",
+  "line": "Islandijos pl. 95-57, LT-49176",
+  "postalcode": "44452",
+  "password": "Password123!@#",
+  "passwordconfirm": "Password123!@#",
+
+  "companyname": "Info Aleja",
+  "companyvat": "LT999999999999",
+  "compnayregnum": "247862432",
+
+  "interval": "annual",
+  "plan": 3
+}
