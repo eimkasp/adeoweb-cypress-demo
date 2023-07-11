@@ -2,13 +2,16 @@
   "entity": "individual",
   "firstname": "Bachana",
   "lastname": "Sagi",
-  "email": "bachanasag@gmail.com",
+  "email": "european_email24@gmail.com",
   "phonenumber": "1 323 552 7627",
-  "country": "United States",
+  "country": "Greece",
   "state": "CALIFORNIA",
-  "city": "Los Angeles",
-  "line": "2315 BARLOW ST",
+  "city": "Thessaloniki",
+  "line": "Beach of Potamos - Epanomi",
   "postalcode": "123123",
   "password": "Password123!@#",
-  "passwordconfirm": "Password123!@#"
+  "passwordconfirm": "Password123!@#",
+
+  "interval": "annual",
+  "plan": 1
 }

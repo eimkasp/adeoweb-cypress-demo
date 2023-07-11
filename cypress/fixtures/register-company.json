@@ -13,5 +13,8 @@
 
   "companyname": "Info Aleja",
   "companyvat": "LT999999999999",
-  "compnayregnum": "247862432"
+  "compnayregnum": "247862432",
+
+  "interval": "annual",
+  "plan": 3
 }
